@@ -1,10 +1,10 @@
-### Chapter 02 - Assignment - Igniting our App
+### __Chapter 02 - Assignment - Igniting our App__
 
 Please Note: Write the answers and code on your own while finishing your assignments. Try to
 put down your thoughts into words by yourself in your own words. (This will help you develop
 muscle memory and you will remember all the concepts properly) ✌
 
-##### Theory Assignment:
+### Theory Assignment:
 - What is `NPM`?
   - `NPM` doesn't have any fixed abbreviation yet. Developers can call it anything like `No Pants Mom` or `Namaste Package Manager`, generally I have heard people call it `Node Package Manager`.
 - What is `Parcel/Webpack`? Why do we need it?
@@ -69,3 +69,19 @@ __~__ (_tilda_) is used only to accept the `patch` releases of dependencies.
 
 __^__ (_caret_) is used to accept the `minor` releases of dependencies.
 
+---
+__Read about Script types in html (MDN Docs)__
+
+---
+
+### Project Assignments
+- In your existing project
+  - intialize `npm` into your repo
+  - install `react` and `react-dom`
+  - remove CDN links of react
+  - install parcel
+  - ignite your app with parcel
+  - add scripts for “start” and “build” with parcel commands
+  - add `.gitignore` file
+  - add `browserlists`
+  - build a production version of your code using `parcel build`
