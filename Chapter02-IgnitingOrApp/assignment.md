@@ -18,7 +18,7 @@ muscle memory and you will remember all the concepts properly) ✌
   - When time comes to build the app, we execute it by writing `npx parcel index.html` (here `index.html` is the entrypoint for the app)
 - What is difference between `dependencies` vs `devDependencies`?
   - `dependencies` are the set of packages that are needed for the app to run in `development` and `production`.
-  - While `devDependencies` are the set of packages that are needed for exclusively for developing the app and not required for prod. Example we might need dependencies to remove `console.log` and `errors` when building the app.
+  - While `devDependencies` are the set of packages that are needed for exclusively for developing the app and not required for prod. Example we might need dependencies to remove `console.log` and `errors` when building the app. `npm install --save-dev remove-console-logs`
 - What is Tree Shaking?
   - It means checking if there is any difference in the current code and refreshing the code.
 - What is Hot Module Replacement?
