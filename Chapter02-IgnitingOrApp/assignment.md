@@ -56,4 +56,16 @@ own words.
 ---
 ### __Read about dif bundlers: vite, webpack, parcel__
 
+---
+### __Read about: ^ - caret and ~ - tilda__
+packages are released in the following version numbers:
+
+`X.Y.Z`
+  - X = Major release that might not be backward compatible
+  - Y = Minor release that includes new features and is backward compatible
+  - Z = Patch release that includes bug fixes and is backward compatible
+
+__~__ (_tilda_) is used only to accept the `patch` releases of dependencies.
+
+__^__ (_caret_) is used to accept the `minor` releases of dependencies.
 
