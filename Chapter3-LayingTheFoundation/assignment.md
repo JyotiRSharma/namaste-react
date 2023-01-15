@@ -13,3 +13,10 @@
   If file type is JS then `type` attribute can be ommitted.
   - `type` attribute `module` is used to treat a JS file as `ESModule`. This allows us to use import and export inside JS modules.
   - `type` import `importmap`can be used to indicate that the body contains import map. It guides browser to resolve module specifiers when importing `JavaScript modules`.
+
+- `{TitleComponent}` VS `{<TitleComponent />}` VS `{<TitleComponent> </TitleComponent>}` in JSX
+
+  - EOD JSX components are JavaScript variables or functions.
+  - `{TitleComponent}` TitleComponent is passed within the curly braces, if its a functional component then output will be a function body.
+  - `{<TitleComponent />}` another way of calling TitleComponent inside angular braces, this will execute the JavaScript function.
+  - `{<TitleComponent> </TitleComponent>}` same as the above way of calling the component, but child components can be wrapped in these tags.
