@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM  from "react-dom/client";
 
 
-let heading = React.createElement("h1", {key:"0"}, "Namaste React!");
+let header1 = React.createElement("h1", {key:"0"}, "Namaste React!");
 // type of the element, props of the element, children
-let para = React.createElement("p", {key:"1"}, "Learning react from")
-let para1 = React.createElement("p", {key:"2"}, "Zero to Hero!");
+let header2 = React.createElement("h2", {key:"1"}, "Learning react from")
+let header3 = React.createElement("h3", {key:"2"}, "Zero to Hero!");
 
-let container = React.createElement("div", {id:"container"}, [heading, para, para1]);
+let title = React.createElement("div", {id:"container", className:"title"}, [header1, header2, header3]);
 
 let root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(title);
