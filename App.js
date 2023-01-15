@@ -1,18 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Title from "/components/Title.js";
+import ReactDOM  from "react-dom/client";
 
-const head = <h1>Head</h1>
 
-console.log(Title)
+let heading = React.createElement("h1", {key:"0"}, "Namaste React!");
+// type of the element, props of the element, children
+let para = React.createElement("p", {key:"1"}, "Learning react from")
+let para1 = React.createElement("p", {key:"2"}, "Zero to Hero!");
 
-const Container = () => {
-  return (
-    <>
-      <h1>Namaste!</h1>
-    </>
-  );
-};
+let container = React.createElement("div", {id:"container"}, [heading, para, para1]);
 
 let root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Container />);
+root.render(container);
