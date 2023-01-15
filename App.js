@@ -1,7 +1,7 @@
 import React from "react";
-import ReactDOM  from "react-dom";
+import ReactDOM  from "react-dom/client";
 
-console.log("hi");
+
 let heading = React.createElement("h1", {key:"0"}, "Namaste React!");
 // type of the element, props of the element, children
 let para = React.createElement("p", {key:"1"}, "Learning react from")
