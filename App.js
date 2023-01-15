@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM  from "react-dom/client";
 
 
-let header1 = React.createElement("h1", {key:"0"}, "Namaste React!");
-// type of the element, props of the element, children
-let header2 = React.createElement("h2", {key:"1"}, "Learning react from")
-let header3 = React.createElement("h3", {key:"2"}, "Zero to Hero!");
-
-let title = React.createElement("div", {id:"container", className:"title"}, [header1, header2, header3]);
+const H1 = <h1 key="0">Namaste React!!</h1>
+const H2 = <h2 key="1">Learning react from</h2>
+const H3 = <h3 key="2">Zero to Hero!</h3>
+const TitleJSX = <div>{H1} {H2} {H3}</div>
 
 let root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(title);
+root.render(TitleJSX);
