@@ -1,0 +1,35 @@
+- Is JSX mandatory for React?
+  - No, but it makes it easier to code for react as it has html like syntax
+- Is ES6 mandatory for React?
+  - No, but ES6 brings in alot of features on top of previous JavaScript versions.
+- {TitleComponent} vs {<TitleComponent />} vs {<TitleComponent></TitleComponent>} in JSX
+  - `{TitleComponent}` allows you to display the value of TitleComponent.
+  - `{<TitleComponent />}` allows you to display react element if it is a function.
+  - `{<TitleComponent> </TitleComponent>}` allows you to add children components inbetween those tags.
+- How can I write comments in JSX?
+  - `{/* */}` you can write comments like this.
+- What is <React.Fragment></React.Fragment> and <></>?
+  - They both are basically the same react elements.
+  - React fragments allows us to wrap multiple html-like tags without a <div> tag.
+  - And it is not visible in the DOM as well.
+- What is Virtual DOM?
+  - Virtual DOM is used by React and is a representation of the Original DOM.
+- What is reconciliation in React?
+  - `Reconciliation` is the process of finding the difference between the virtual DOM and the DOM and chnages the updated state.
+- What is `React Fiber`?
+  - `React Fiber` is the reconciliation engine for React.
+- Why we need `keys` in react? When do we need `keys` in React?
+  - React needs keys to identify elements which are of the same react element type.
+  - The UL and OL list items needs to have unique IDs so that React can render it successfully.
+- Can we use index as keys in React?
+  - We can use array index as keys in React, but having an unique ID is preferred over index.
+  - However, index is better than not having any keys.
+
+- What is `props` in React? Ways to
+  - `props` are way to pass arguments to React components.
+  - React components are basically normal JavaScript functions, ans just like we can define a function with parameters and call then with arguments, similarly we can do thesame in react components.
+  - We can pass `props` to react components using the attributes of the of the react component tag.
+- What is a config driven UI?
+  - Config driven API looks like a dictionary data structure. (`JSON`)
+  - Each key is considered as the config and its values are the data for the configuration.
+  - Config driven UI leverages the config driven API, and has UI layouts based on `JSON` of the config driven API.
