@@ -1,20 +1,31 @@
 import React from "react";
 import logo from "/assets/images/foodvilla.png";
-import userIcon from "/assets/images/userIcon.png";
-import "./Header.css";
+import "../index.css";
 
+const Title = () => (
+  <a href="/">
+  <img
+    className="logo"
+    alt="logo"
+    src="https://yt3.googleusercontent.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
+  />
+  </a>
+);
 
 const Header = () => {
-  
   return (
-    <>
-      <ul className="navbar">
-        <li><img className="logo" src={logo} /></li>
-        <li><input className="search-box" type="text" /> <button className="search-box" >Search</button></li>
-        <li><img className="user-icon" src={userIcon} /></li>
-      </ul>
-    </>
-  )
-}
+    <div className="header">
+      <Title />
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export default Header;

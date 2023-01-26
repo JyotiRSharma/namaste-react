@@ -1,0 +1,1 @@
+export const RESTAURANT_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2960587&lng=85.8245398&page_type=DESKTOP_WEB_LISTING"
