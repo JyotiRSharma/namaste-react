@@ -18,9 +18,15 @@
   width: 100px;
 }
 
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .restaurant-card {
   width: 200px;
   border: 1px solid black;
+  padding: 10px;
   margin: 10px;
 }
 
@@ -28,7 +34,3 @@
   width: 100%;
 }
 
-.restaurant-list {
-  display: flex;
-  flex-wrap: wrap;
-}

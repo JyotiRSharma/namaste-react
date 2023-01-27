@@ -1,18 +1,14 @@
 import "../index.css";
+import { IMG_URL } from "../utils";
 
-const RestaurantCard = () => {
-  const pizzaHut = {
-    image: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/caanzrjtgl3obhmbbfmb",
-    heading: "Pizza Hut",
-    cuisine: ["Pizzas", "Americano"],
-    rating: 4
-  }
+const RestaurantCard = ({uuid, name, cloudinaryImageId, cuisines, deliveryTime}) => {
+
   return (
-    <div className="restaurant-card">
-      <img src={pizzaHut.image} />
-      <h1>{pizzaHut.heading}</h1>
-      <h2>{pizzaHut.cuisine.join(", ")}</h2>
-      <h3>{pizzaHut.rating} stars</h3>
+    <div key={uuid} className="restaurant-card">
+      <img src={IMG_URL+cloudinaryImageId} />
+      <h1>{name}</h1>
+      <h2>{cuisines.join(", ")}</h2>
+      <h3>{deliveryTime} minutes to reach</h3>
     </div>
   )
 };
